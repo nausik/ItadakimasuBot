@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>ItadakimasuBot - Stats</title>
+    </head>
+    <body>
+        <div class="user_key hidden"><%= key %></div>
+        <div class="wrapper">
+            <header class="header">
+                <div class="float_left float_clear">
+                    <h1>Itadakimasu Bot</h1>
+                </div>
+                <div class="float_right float_clear">
+                    <input name="date_of_log" id="date_select" data-format="DD-MM-YYYY" data-template="D MMM YYYY">
+                </div>
+            </header>
+            <h2>Daily data</h2>
+            <table class="data_table">
+                <thead>
+                    <tr>
+                        <th>Food name</th>
+                        <th>Date</th>
+                        <th>Portions</th>
+                        <th>Calories</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                        <th>Fats</th>
+                    </tr>
+                </thead>
+                <tbody class="data_table_body">
+                </tbody>
+                <tfoot class="data_table_footer">
+                </tfoot>
+            </table>
+            <h2>Monthly graphs</h2>
+            <canvas id="calories_chart" class="chart"></canvas>
+            <canvas id="protein_chart" class="chart"></canvas>
+            <canvas id="carbs_chart" class="chart"></canvas>
+            <canvas id="fats_chart" class="chart"></canvas>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="/js/lib/combodate.min.js"></script>
+    <script src="/js/index.js"></script>
+</html>

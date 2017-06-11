@@ -1,0 +1,109 @@
+h1 {
+    font-weight: 100;
+}
+h2 {
+    margin-top: 50px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    padding-left: 1em;
+}
+h2:not(:first-of-type) {
+    margin-top: 150px;
+}
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+.hidden {
+    display: none;
+}
+td {
+    text-align: center;
+}
+.data_table {
+    width: 100%;
+    font-size: 1.4em;
+}
+.bold {
+    font-weight: bold;
+}
+tbody td {
+    border: 1px solid #ccc;
+}
+tfoot td {
+    padding-top: 20px;
+}
+td,
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+td:first-letter {
+    text-transform: capitalize;
+}
+.header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1em;
+    height: 6em;
+}
+.header .float_left {
+    float: left;
+}
+.header .float_right {
+    float: right;
+    padding-top: 1.67em;
+    padding-bottom: 1.67em;
+}
+.float_clear {
+    clear: none;
+}
+.header h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+.header .float_right {
+    padding-right: 1em;
+}
+.chart {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.combodate .day,
+.combodate .month,
+.combodate .year {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 1.8em;
+}
+.combodate .month {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media screen and (min-width: 1000px) {
+    h2 {
+        padding-left: 0;
+    }
+    .header .float_right {
+        padding-top: 2.67em;
+    }
+    .combodate .day,
+    .combodate .month,
+    .combodate .year {
+        font-size: 1em;
+    }
+    .data_table {
+        font-size: 1em;
+    }
+    .wrapper {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .header h1 {
+        margin-left: 0;
+    }
+    .header .float_right {
+        padding-right: 0;
+    }
+}
